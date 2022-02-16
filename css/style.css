@@ -1,0 +1,28 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* header titel  */
+.header-margin{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: blueviolet;
+}
+.roboto-medium{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 20px 0;
+}
+/* item start  */
+.item-name{
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+}
+input[type="text"], textarea {
+    background-color : #DCDCDC; 
+  }
+.input-margin{
+    margin-bottom: 20px;
+}
