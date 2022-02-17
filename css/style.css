@@ -23,6 +23,11 @@ body{
 input[type="text"], textarea {
     background-color : #DCDCDC; 
   }
+  label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+  }
 .input-margin{
     margin-bottom: 20px;
 }
