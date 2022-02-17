@@ -6,7 +6,7 @@ function Item(Id){
 };
 
     // Calculate started 
-    
+
 document.getElementById('Calculate').addEventListener('click', function(event){
 
     const Income = Item('income');
@@ -23,8 +23,20 @@ document.getElementById('Calculate').addEventListener('click', function(event){
 
     // Balance update 
 
-    const totalAmount1 = document.getElementById('balance');
-    const totalAmountText1 = totalAmount1.innerText;
-    totalAmount1.innerText = Income - total;
- 
+    const Balance = document.getElementById('balance');
+    const BalanceText = Balance.innerText;
+    Balance.innerText = Income - total;
+
+    
 });
+function saveAmount(){
+const saveAmount = document.getElementById('save-input');
+const saveAmountInput = saveAmount.value;
+const saveAmountDevided  = Item('income') / parseFloat(100);
+const saveAmountMultiplay = saveAmountDevided * saveAmountInput;
+console.log(saveAmountMultiplay);
+
+const saveAmountOutput = document.getElementById('save-amount');
+    const saveAmountOutputText = saveAmountOutput.innerText;
+    saveAmountOutput.innerText = saveAmountMultiplay;
+};
