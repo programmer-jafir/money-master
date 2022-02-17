@@ -55,10 +55,5 @@ const saveAmountOutput = document.getElementById('save-amount');
 
     const RemainingAmount = document.getElementById('remaining-balance');
     const RemainingAmountText = RemainingAmount.innerText;
-    if(Balance() > saveAmountOutput.innerText){
-        RemainingAmount.innerText = Balance() -  saveAmountOutput.innerText;
-    }
-    else{
-        RemainingAmount.innerText = "Your money is not enough"
-    }
+    RemainingAmount.innerText = Balance() -  saveAmountOutput.innerText;
 }
