@@ -1,8 +1,8 @@
 function Item(Id){
         const Item = document.getElementById(Id);
         const ItemText = Item.value;
-        const ItemTextNum = parseFloat(ItemText);
-        return ItemTextNum;
+        const ItemTextNum = parseFloat(ItemText);       
+        return ItemTextNum;        
 };
 
 function itemsTotal(){
@@ -55,5 +55,10 @@ const saveAmountOutput = document.getElementById('save-amount');
 
     const RemainingAmount = document.getElementById('remaining-balance');
     const RemainingAmountText = RemainingAmount.innerText;
-    RemainingAmount.innerText = Balance() -  saveAmountOutput.innerText;
+    if(Balance() > saveAmountOutput.innerText){
+        RemainingAmount.innerText = Balance() -  saveAmountOutput.innerText;
+    }
+    else{
+        RemainingAmount.innerText = "Your money is not enough"
+    }
 }
